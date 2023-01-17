@@ -5,7 +5,7 @@ plugins {
     signing
 }
 
-val exoplayerProject = project(":exoplayer-extension-ffmpeg")
+val exoplayerProject = project(":media3-lib-decoder-ffmpeg")
 val android = exoplayerProject.extensions.findByType(LibraryExtension::class.java)
     ?: error("Could not find android extension")
 
