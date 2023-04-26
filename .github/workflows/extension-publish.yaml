@@ -1,4 +1,4 @@
-name: ExoPlayer FFmpeg Extension / Publish
+name: Media3 FFmpeg Extension / Publish
 
 on:
   push:
