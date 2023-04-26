@@ -36,8 +36,10 @@ jobs:
         run: ./build.sh
       - name: Build extension
         run: ./gradlew :media3-lib-decoder-ffmpeg:assembleRelease
+      - name: Dump path
+        run: echo "${ls -lh ${MEDIA3_ROOT}/libraries/decoder_ffmpeg/buildout/outputs/aar}"
       - name: upload result
         uses: actions/upload-artifact@v1
         with:
           name: media3-ffmpeg-extension
-          path: ${{github.workspace}}/media/libraries/decoder_ffmpeg/buildout/outputs/aar/media3-lib-decoder-ffmpeg-release.aar
+          path: ${MEDIA3_ROOT}/libraries/decoder_ffmpeg/buildout/outputs/aar/media3-lib-decoder-ffmpeg-release.aar
