@@ -54,8 +54,8 @@ jobs:
           for i in ${{ steps.pl.outputs.paths }}; do
           echo $i
           done
-      - name: upload result
+      - name: Upload ffmpeg-extension
         uses: actions/upload-artifact@v1
         with:
           name: media3-ffmpeg-extension
-          path: ${MEDIA3_ROOT}/libraries/decoder_ffmpeg/buildout/outputs/aar/media3-lib-decoder-ffmpeg-release.aar
+          path: media/libraries/decoder_ffmpeg/build/outputs/aar/media3-lib-decoder-ffmpeg-release.aar
