@@ -40,4 +40,4 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: media3-ffmpeg-extension
-          path: ${{ github.workspace }}/media/libraries/decoder_ffmpeg/buildout/outputs/aar/media3-lib-decoder-ffmpeg-release.aar
+          path: ${{github.workspace}}/media/libraries/decoder_ffmpeg/buildout/outputs/aar/media3-lib-decoder-ffmpeg-release.aar
